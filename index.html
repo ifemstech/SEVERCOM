@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="invest.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="responsive.cs">
+
+  <title>Investing</title>
+  
+  <style>
+  </style>
+  <!-- remixicon CDN for icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  </style>
+
+  <!-- LottieFiles Web Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+<div class="head">
+  <header>
+    <h2>SEVERCOM</h2>
+  </header>
+
+  <!-- Hamburger icon -->
+  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation menu -->
+  <nav class="serve" id="navMenu">
+    <a href="index.html">HOME</a>
+    <a href="whysevercom.html">WHY SEVERCOM</a>
+    <a href="pricing.html">PRICING</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="customerservice.html">CUSTOMER SERVICE</a>
+
+    <div class="log-mobile">
+      <button class="log1" onclick="log1()">LOGIN</button>
+      <button class="log2" onclick="log2()">SIGN UP →</button>
+      <script src="logfunctions.js"></script>
+    </div>
+  </nav>
+
+  <!-- Desktop login buttons -->
+  <div class="log">
+    <button class="log1" onclick="log1()">LOGIN</button>
+    <button class="log2" onclick="log2()">SIGN UP →</button>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  navMenu.classList.toggle("active");
+  menuIcon.classList.toggle("open");
+
+  // Smooth slide animation
+  if (navMenu.classList.contains("active")) {
+    navMenu.style.maxHeight = navMenu.scrollHeight + "px";
+  } else {
+    navMenu.style.maxHeight = "0";
+  }
+}
+</script>
+
+
+  <section class="home" data-src="bussiness-5475664-1280.jpg" data-uk-img=""
+    style="background-image: url(finance-8037839_1920.jpg); width: 90%;">
+    <div id="tet">
+      <h2 class="today">TAKE FULL CONTROL OF YOUR PAYMENT TODAY!</h2>
+      <h6 class="short">Secure, fast, and reliable payment orchestration to boost your business.</h6>
+      <h4>MarketWatch</h4>
+      <div class="market">
+        <div class="box">
+          <div class="icon"><img src="stats-financial-svgrepo-com.svg" alt="Stocks"></div>
+          <div class="info">
+            <div class="title">Stocks</div>
+            <div class="percent up">125 /s</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><img src="Bitcoin.svg" alt="Crypto"></div>
+          <div class="info">
+            <div class="title">Crypto</div>
+            <div class="percent down">68.00 /s</div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><img src="stockchart-svgrepo-com.svg" alt="Forex"></div>
+          <div class="info">
+            <div class="title">Forex</div>
+            <div class="percent up">45.00 /s</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="away">
+      <!-- Lottie Animation -->
+      <lottie-player src="Data Visualization.json" speed="1" class="lottie" background="transparent" margin-top="00px"
+        padding-right="20px" style="width: 780px; height: 700px;" loop autoplay>
+      </lottie-player>
+    </div>
+  </section>
+
+
+  <div class="three" data-src="/img/in-equity-11-bg.png" data-uk-img="in-equity-11-bg.png" style="background-image: url(&quot;https://genesisminingbot.com/img/in-equity-11-bg.png&quot;);">
+    <div class="vest">
+      <h1 class="high">We are making <span class="in-highlight">Diversification Payments accessible to everyone</span>
+      </h1>
+      <p>We combine the power of fintech and blockchain to create a unified ecosystem building efficient digital
+        infrastructures and offering users a transparent, automated way to participate in the evolving world of digital
+        finance.
+      </p>
+    </div>
+
+    <section class="features">
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-1.svg" alt="Forex" width="70px"></div>
+        <h3>Secure Transactions</h3>
+        <p>End-to-end encryption and fraud detection for maximum security.</p>
+      </div>
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-2.svg" alt="Forex" width="70px"></div>
+        <h3>Multi-Currency Support</h3>
+        <p>Accept payments in multiple currencies with real-time conversion.</p>
+      </div>
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-3.svg" alt="Forex" width="70px"></div>
+        <h3>Analytics Dashboard</h3>
+        <p>Track sales, success rates, and performance in one dashboard.</p>
+      </div>
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-4.svg" alt="Forex" width="70px"></div>
+        <h3>24/7 Support</h3>
+        <p>Our experts are available round the clock to assist your business.</p>
+      </div>
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-5.svg" alt="Forex" width="70px"></div>
+        <div class="info">
+          <h3>Instant Payouts</h3>
+          <p>Process withdrawals and merchant settlements in seconds with automated verification and seamless banking
+            integrations.</p>
+        </div>
+      </div>
+
+      <div class="ecard">
+        <div class="icon"><img src="in-equity-11-icon-6.svg" alt="Forex" width="70px"></div>
+        <h3>Mobile Wallet Integration</h3>
+        <p>Empower users to send, receive, and manage funds directly from their mobile wallets — anytime, anywhere.</p>
+      </div>
+    </section>
+  </div>
+
+
+    <section class="four">
+      <header class="try">
+        <h1>Start capitalizing with Servercom</h1>
+        <button class="log3" onclick="log3()">Open Account</button>
+      </header>
+
+
+      <div class="facard">
+
+        <div class="scard card1">
+          <div class="icard">
+            <div class="uk-margin-right">
+              <span class="in-icon-wrap circle">1</span>
+            </div>
+            <div>
+              <h3>Funds Working Smarter</h3>
+              <p>At Servercom, your funds start working the moment they enter the platform. Our automated payment
+                routing and liquidity
+                optimization ensure faster settlements and lower fees — no manual configuration required.</p>
+            </div>
+          </div>
+
+          <div class="icard">
+            <div class="uk-margin-right">
+              <span class="in-icon-wrap circle">2</span>
+            </div>
+            <div>
+              <h3>Flexible Payment & Currency Options</h3>
+              <p>Accept and manage a broad set of payment types (cards, bank transfers, mobile wallets, and stablecoins)
+                with real-time foreign-exchange handling and instant switching between settlement rails.</p>
+            </div>
+          </div>
+
+          <div class="icard">
+            <div class="uk-margin-right">
+              <span class="in-icon-wrap circle">3</span>
+            </div>
+            <div>
+              <h3>Real-Time Settlements & Payouts</h3>
+              <p>Monitor transactions and cashflow through a live analytics dashboard. Set up instant
+                or scheduled payouts to wallets or bank accounts with full audit trails and enterprise-grade compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="scard card2"></div>
+      </div>
+    </section>
+
+
+    <section class="stats-section">
+      <h1> <span class="in-highlight live">LIVE PLATFORM STATISTICS</span></h1>
+      <h2>Real-time performance metrics that demonstrate our platform's growth and reliability.</h2>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <i class="ri-money-euro-circle-line stat-icon"></i>
+          <div class="stat-value" data-target="99000000+">0</div>
+          <div class="stat-label">Total Financed ($)</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-user-line stat-icon"></i>
+          <div class="stat-value" data-target="17000+">0</div>
+          <div class="stat-label">Active Clients </div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-rocket-line stat-icon"></i>
+          <div class="stat-value" data-target="6000000">0</div>
+          <div class="stat-label">Interest Paid ($)</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-line-chart-line stat-icon"></i>
+          <div class="stat-value" data-target="15.6" data-decimal="true">0</div>
+          <div class="stat-label">Average Return (%)</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-home-4-line stat-icon"></i>
+          <div class="stat-value" data-target="10">0</div>
+          <div class="stat-label">Loan Originators</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-hand-coin-line stat-icon"></i>
+          <div class="stat-value" data-target="53000000">0</div>
+          <div class="stat-label">Diversifed by Investors ($)</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-group-line stat-icon"></i>
+          <div class="stat-value" data-target="30000">0</div>
+          <div class="stat-label">Registered Users</div>
+        </div>
+
+        <div class="stat-card">
+          <i class="ri-global-line stat-icon"></i>
+          <div class="stat-value" data-target="100">0</div>
+          <div class="stat-label">Total Countries</div>
+        </div>
+      </div>
+    </section>
+    <!-- <--! live performance js-->
+    <script src="liveperformance.js"></script>
+
+    <div class="five">
+      <section class="ifcard">
+        <div class="infocard card3">
+          <figure class="video-box" controls width="60%" height="30%">
+            <video src="133361-756618034_medium.mp4" type="mp4/video" autoplay="true"></video>
+            <figcaption style="color: white;">Growth Through Seamless Payments</figcaption>
+          </figure>
+        </div>
+
+        <div class="infocard card4">
+          <h2 class="olyy">The evolution of one of the world’s most secure and scalable fintech payment systems.</h2>
+          <ul class="uk-list in-list-check">
+            <li>Digital Infrastructure</li>
+            <li>Smart Payment Technology</li>
+            <li>Global Currency Support</li>
+            <li>Data-Driven Financial Insights</li>
+            <li>Risk & Compliance Management</li>
+            <li>API & Business Integration</li>
+            <li>Customer Trust & Security</li>
+          </ul>
+          <button class="log4" onclick="log4()">Open Account Now →</button>
+        </div>
+      </section>
+    </div>
+    <div>
+
+      <div class="six">
+        <!-- Card 5 -->
+        <div class="learn card5">
+          <div class="card-content">
+            <i class="icon">🏛</i>
+            <h3>Fully regulated</h3>
+            <p>Servercom is a trusted and fully regulated payment system built to power the next generation of digital
+              finance.
+              Experience seamless transactions, global connectivity,
+              and the confidence that comes with enterprise-grade security and compliance.</p>
+            <a href="#">Learn more →</a>
+          </div>
+          <div class="card-bg" style="background-image: url('in-equity-9-bg-1.png');"></div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="learn card6">
+          <div class="card-content">
+            <i class="icon">👥</i>
+            <h3>Expert services</h3>
+            <p>At Servercom, our seasoned fintech professionals deliver world-class support backed by deep industry
+              expertise.
+              We ensure every transaction is seamless, secure, and optimized for performance
+              — giving your business the confidence to scale effortlessly.</p>
+            <a href="#">Learn more → </a>
+          </div>
+          <div class="card-bg" style="background-image: url('in-equity-9-bg-2.png');"></div>
+        </div>
+      </div>
+
+      <div class="press-section">
+        <span class="press-title ">We are in the press</span>
+        <div class="press-logos">
+          <img src="in-equity-press-1.svg" alt="CNBC">
+          <img src="in-equity-press-2.svg" alt="The Guardian">
+          <img src="in-equity-press-3.svg" alt="Bloomberg">
+          <img src="in-equity-press-4.svg" alt="Reuters">
+          <img src="in-equity-press-5.svg" alt="MarketWatch">
+        </div>
+      </div>
+
+      <section class="testimonials-section">
+
+        <div class="testimonials-header">
+          <h4 class="in-highlight">WHAT OUR USERS SAY</h4>
+          <h2>Real Feedback from global businesses that rely on Servercom for secure payments,
+            real-time settlements, and effortless financial operations.</h2>
+          <div class="stars">
+            Rating ★★★★☆ <span>4.3 stars</span>
+          </div>
+        </div>
+        <!-- Arrow buttons -->
+        <div class="arrow left"><i class="ri-arrow-left-s-line"></i></div>
+        <div class="arrow right"><i class="ri-arrow-right-s-line"></i></div>
+
+        <div class="testimonial-slider" id="slider">
+          <!-- Repeat testimonial cards -->
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=1" alt="user">
+            <h3>Marcus Brown</h3>
+            <small>Netherlands</small>
+            <p>Servercom has completely transformed how we handle international payments. Transactions are faster, fees
+              are lower, and everything runs smoothly</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.2% avg return</span>
+              <span class="stars-footer">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=2" alt="user">
+            <h3>Marco Carlos</h3>
+            <small>Germany</small>
+            <p>The analytics dashboard gives us real-time insight into our cash flow. It’s the smartest payment system
+              we’ve used so far.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">15.8% avg return</span>
+              <span class="stars-footer">★★★★☆</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=3" alt="user">
+            <h3>Emily Clark</h3>
+            <small>UK</small>
+            <p>We integrated Servercom’s API in under a day. Their tech support team is responsive and genuinely
+              understands fintech</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.5% avg return</span>
+              <span class="stars-footer">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=4" alt="user">
+            <h3>James Miller</h3>
+            <small>USA</small>
+            <p>As an e-commerce platform, seamless payments are everything. Servercom delivers speed and reliability
+              every single time.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">15.9% avg return</span>
+              <span class="stars-footer">★★★★☆</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=5" alt="user">
+            <h3>Sophia Li</h3>
+            <small>Singapore</small>
+            <p>I feel secure investing here. Returns are consistent and withdrawals are smooth.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.0% avg return</span>
+              <span class="stars-footer">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=6" alt="user">
+            <h3>David Smith</h3>
+            <small>Canada</small>
+            <p>We trust Servercom because of their compliance standards and security. Every transaction feels protected
+              and transparent.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">15.7% avg return</span>
+              <span class="stars-footer">★★★★☆</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=7" alt="user">
+            <h3>Isabella Rossi</h3>
+            <small>Italy</small>
+            <p>Our payouts used to take days — now they’re instant. Servercom has truly upgraded our operations</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.3% avg return</span>
+              <span class="stars-footer">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=8" alt="user">
+            <h3>Lucas Moreira</h3>
+            <small>Brazil</small>
+            <p>The dashboard is clean and easy to understand. Returns are exactly as promised.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">15.6% avg return</span>
+              <span class="stars-footer">★★★★☆</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=9" alt="user">
+            <h3>Hannah Kim</h3>
+            <small>South Korea</small>
+            <p>Servercom’s support team is unmatched. They treat every client like a partner, not just a number</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.4% avg return</span>
+              <span class="stars-footer">★★★★★</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <img src="https://i.pravatar.cc/50?img=10" alt="user">
+            <h3>Ahmed Ali</h3>
+            <small>UAE</small>
+            <p>The real-time monitoring feature is a game changer. We can see every transaction and settlement as it
+              happens.</p>
+            <div class="testimonial-footer">
+              <span class="avg-return">16.1% avg return</span>
+              <span class="stars-footer">★★★★☆</span>
+            </div>
+          </div>
+          <script src="testmnie.js"></script>
+      </section>
+
+      <h2 class="tradinghh">🌍 LIVE MARKET PRICES</h2>
+
+      <!-- TradingView Live Ticker Widget -->
+      <div class="tradingview-widget-container fixed-top">
+
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async>
+            {
+              "symbols": [
+                { "proName": "BINANCE:BTCUSDT", "title": "Bitcoin" },
+                { "proName": "BINANCE:ETHUSDT", "title": "Ethereum" },
+                { "proName": "BINANCE:BNBUSDT", "title": "BNB" },
+                { "proName": "BINANCE:SOLUSDT", "title": "Solana" },
+                { "proName": "BINANCE:XRPUSDT", "title": "XRP" },
+                { "proName": "NASDAQ:TSLA", "title": "Tesla" },
+                { "proName": "NASDAQ:MSFT", "title": "Microsoft" },
+                { "proName": "NASDAQ:AMZN", "title": "Amazon" },
+                { "proName": "NYSE:NVDA", "title": "NVIDIA" },
+                { "proName": "NASDAQ:GOOGL", "title": "Google" },
+                { "proName": "NYSE:META", "title": "Meta" }
+              ],
+                "colorTheme": "dark",
+                  "isTransparent": false,
+                    "displayMode": "adaptive",
+                      "locale": "en"
+            }
+          </script>
+      </div>
+
+      <div class="in-equity-14">
+        <!-- Left side -->
+        <div class="left-content">
+          <div class="award">
+            <div class="in-award-logo">
+              <img src="in-equity-5-award-3.svg" alt="award" width="110">
+            </div>
+            <div class="in-award-badge">
+              <h3>#1 Choice for Seamless Transactions</h3>
+              <h4>BEST NEXT-GENERATION FINTECH PAYMENTS</h4>
+              <p>Voted by industry professionals</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="right-content">
+          <ul class="uk-list in-list-check">
+            <li>Zero Commissions</li>
+            <li>Zero Deposit Fees</li>
+          </ul>
+          <a href="#" class="cta-btn">Open your account <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
+
+
+
+      <footer class="footer">
+        <div class="footer-top">
+          <!-- Trustpilot Section -->
+
+          <div class="footer-box trustpilot">
+            <!-- Trustpilot Logo -->
+            <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg" alt="Trustpilot" class="trust-logo">
+
+            <!-- Stars -->
+            <div class="trust-rating">
+              <svg viewBox="0 0 24 24" class="star">
+                <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star">
+                <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+              </svg>
+              <svg viewBox="0 0 24 24" class="star half">
+                <polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" />
+              </svg>
+            </div>
+
+            <!-- Score -->
+            <p class="trust-score">TrustScore 4.5 | 120 reviews</p>
+          </div>
+
+
+          <!-- Main Links -->
+          <div class="footer-box">
+            <h4>Main Links</h4>
+            <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="whysevercom.html">Why Servercom</a></li>
+             <li><a href="pricing.html">Pricing</a></li>
+             <li><a href="aboutus.html">About Us</a></li>
+             <li><a href="customerservice.html">Support</a></li>
+            </ul>
+          </div>
+
+          <!-- Helpful Links -->
+          <div class="footer-box">
+            <h4>Helpful Links</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Service</a></li>
+              <li><a href="customerservice.html">Contact Us</a></li>
+              <li><a href="pricing.html">Payment Access</a></li>
+            </ul>
+          </div>
+
+          <!-- Office Info -->
+          <div class="footer-box office">
+            <h4><span class="icon">📍</span> Office</h4>
+            <p>Servercom Ltd. Europe</p>
+            <p>Servercom Ltd. Asia-Pacific</p>
+            <p>Servercom Ltd.  Lagos, Nigeria
+               support@servercom.io </p>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>© 2025 Servercom. All Rights Reserved.</p>
+          <div class="crypto-icons">
+            <img src="Bitcoin.svg" alt="Bitcoin">
+            <img src="Ethereum.svg" alt="Ethereum">
+            <img src="usdttt.svg" alt="Tether">
+          </div>
+          <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+          <script src="scroll-top.js">⬆</script>
+        </div>
+      </footer>
+
+</body>
+
+</html>

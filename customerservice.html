@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Service | Genesis Mining</title>
+  <link rel="stylesheet" href="invest.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: rgb(from color r g b);
+      color: #333;
+    }
+
+    /* Customer Service Section */
+    .service {
+      max-width: 900px;
+      margin: 130px auto 60px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .service h3 {
+      font-size: 1.6rem;
+      color: #0a84ff;
+      border-left: 4px solid #0a84ff;
+      display: inline-block;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    .service p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .service a {
+      color: #0a84ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .service a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Options Grid */
+    .contact-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .option-card {
+      background: #f9fafc;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .option-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+    .option-card h4 {
+      color: rgb(20, 23, 187);;
+      margin: 15px 0 10px 0;
+      font-size: 1.2rem;
+    }
+
+    .option-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .option-card button {
+      background: rgb(20, 23, 187);;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .option-card button:hover {
+      background: #006ddf;
+    }
+
+    /* Live Chat Popup */
+    .chat-box {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 320px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 2000;
+    }
+
+    .chat-header {
+      background: #0a84ff;
+      color: #fff;
+      padding: 12px;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chat-header button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .chat-messages {
+      padding: 15px;
+      height: 200px;
+      overflow-y: auto;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+
+    .chat-input input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      outline: none;
+      font-size: 0.95rem;
+    }
+
+    .chat-input button {
+      background: #0a84ff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+        /* Contact Form */
+    .contact{
+        padding: 4rem 2rem;
+        background:linear-gradient(darkblue, white);
+        color: white;
+        border-radius: 20px;
+    }
+    .contact h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-form{
+        max-width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .contact-form input, .contact-form textarea{
+        padding: 0.8rem;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+    }
+    .contact-form button{
+        background: rgb(228, 163, 24);
+        color: #ffffff;
+        border: none;
+        padding: 0.8rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .contact-form button:hover{
+        background: rgb(7, 21, 212);
+    }
+
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .service {
+        padding: 20px;
+        margin: 140px 10px 30px 10px;
+      }
+
+      .chat-box {
+        width: 90%;
+        right: 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="head">
+  <header>
+    <h2>SEVERCOM</h2>
+  </header>
+
+  <!-- Hamburger icon -->
+  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation menu -->
+  <nav class="serve" id="navMenu">
+    <a href="index.html">HOME</a>
+    <a href="whysevercom.html">WHY SEVERCOM</a>
+    <a href="pricing.html">PRICING</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="customerservice.html">CUSTOMER SERVICE</a>
+
+    <div class="log-mobile">
+      <button class="log1" onclick="log1()">LOGIN</button>
+      <button class="log2" onclick="log2()">SIGN UP →</button>
+    </div>
+  </nav>
+
+  <!-- Desktop login buttons -->
+  <div class="log">
+    <button class="log1" onclick="log1()">LOGIN</button>
+    <button class="log2" onclick="log2()">SIGN UP →</button>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  navMenu.classList.toggle("active");
+  menuIcon.classList.toggle("open");
+
+  // Smooth slide animation
+  if (navMenu.classList.contains("active")) {
+    navMenu.style.maxHeight = navMenu.scrollHeight + "px";
+  } else {
+    navMenu.style.maxHeight = "0";
+  }
+}
+</script>
+
+  <!-- Customer Service Section -->
+  <div class="service">
+    <h3>Contact Us</h3>
+    <p>
+      Start a live chat to get instant response from our support team
+    </p>
+
+    <!-- CONTACT FORM -->
+  <section class="contact">
+      <h2 data-aos="fade-down">Get in Touch</h2>
+      <form class="contact-form" data-aos="fade-up">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+  </section>
+
+  <div class="option-card">
+  <!-- Chat Icon -->
+  <div class="icon">
+    
+    <!-- Paste the chat SVG here -->
+  </div>
+  <h4>Live Chat Support</h4>
+  <p>Our representatives are available 24/7 to assist you instantly through live chat.</p>
+  <button onclick="openChat()">Start Live Chat</button>
+</div>
+
+<div class="option-card">
+  <!-- Email Icon -->
+  <div class="icon">
+    <!-- Paste the email SVG here -->
+  </div>
+  <h4>Email Support</h4>
+  <p>Need detailed help? Send us an email and we’ll get back to you within 24 hours.</p>
+  <a href="mailto:support@servercomfinance.com">
+    <button>Send Email</button>
+  </a>
+</div>
+
+  </div>
+
+  <!-- Live Chat Box -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      Live Support
+      <button onclick="closeChat()">×</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <p><strong>Support:</strong> Hi there! 👋 How can we help you today?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+    
+  <!-- Left side -->
+   <div class="in-equity-14">
+      <div class="left-content">
+    <div class="award">
+      <div class="in-award-logo">
+        <img src="in-equity-5-award-3.svg" alt="award" width="110">
+      </div>
+      <div class="in-award-badge">
+              <h3>#1 Choice for Seamless Transactions</h3>
+              <h4>BEST NEXT-GENERATION FINTECH PAYMENTS</h4>
+              <p>Voted by industry professionals</p>
+      </div>  
+    </div> 
+  </div>  
+
+  <!-- Right side -->
+  <div class="right-content">
+    <ul class="uk-list in-list-check">
+      <li>Zero Commissions</li>
+      <li>Zero Deposit Fees</li>
+    </ul>
+    <button class="log4" onclick="log4()">Open Account Now →</button>
+  </div>
+   </div>
+
+
+  <footer class="footer">
+  <div class="footer-top">
+    <!-- Trustpilot Section -->  
+      
+    <div class="footer-box trustpilot">
+      <!-- Trustpilot Logo -->
+      <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg" 
+      alt="Trustpilot" class="trust-logo">
+
+      <!-- Stars -->
+      <div class="trust-rating">
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star half"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+      </div>
+
+      <!-- Score -->
+      <p class="trust-score">TrustScore 4.5 | 120 reviews</p>
+    </div>
+
+
+    <!-- Main Links -->
+    <div class="footer-box">
+      <h4>Main Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="whysevercom.html">Why Servercom</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Helpful Links -->
+    <div class="footer-box">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="customerservice.html">Contact Us</a></li>
+        <li><a href="pricing.html">Payment Access</a></li>
+      </ul>
+    </div>
+
+    <!-- Office Info -->
+    <div class="footer-box office">
+      <h4><span class="icon">📍</span> Office</h4>
+        <p>Servercom Ltd. Europe</p>
+        <p>Servercom Ltd. Asia-Pacific</p>
+      <p>Servercom Ltd.  Lagos, Nigeria
+       support@servercom.io </p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Servercom. All Rights Reserved.</p>
+    <div class="crypto-icons">
+      <img src="Bitcoin.svg" alt="Bitcoin">
+      <img src="Ethereum.svg" alt="Ethereum">
+      <img src="usdttt.svg" alt="Tether">
+    </div>
+    <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+    <script src="scroll-top.js"></script>
+  </div>
+</footer>
+
+  <script>
+    const chatBox = document.getElementById('chatBox');
+    const chatInput = document.getElementById('chatInput');
+    const chatMessages = document.getElementById('chatMessages');
+
+    function openChat() {
+      chatBox.style.display = 'flex';
+    }
+
+    function closeChat() {
+      chatBox.style.display = 'none';
+    }
+
+    function sendMessage() {
+      const msg = chatInput.value.trim();
+      if (msg) {
+        const p = document.createElement('p');
+        p.innerHTML = `<strong>You:</strong> ${msg}`;
+        chatMessages.appendChild(p);
+        chatInput.value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        setTimeout(() => {
+          const reply = document.createElement('p');
+          reply.innerHTML = `<strong>Support:</strong> Thanks for your message! We’ll reply shortly. Write our Email :  support@genesisminings.com`;
+          chatMessages.appendChild(reply);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+</html>

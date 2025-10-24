@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="invest.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body {
+      background: #ff;
+      text-align: center;
+    }
+    .head{
+        margin-top: 0;
+    }
+    .four{
+        margin-top: 150px;
+    }
+    .pricehead{
+      color: white;
+    }
+
+</style>
+<body>
+<div class="head">
+  <header>
+    <h2>SEVERCOM</h2>
+  </header>
+
+  <!-- Hamburger icon -->
+  <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation menu -->
+  <nav class="serve" id="navMenu">
+    <a href="index.html">HOME</a>
+    <a href="whysevercom.html">WHY SEVERCOM</a>
+    <a href="pricing.html">PRICING</a>
+    <a href="aboutus.html">ABOUT US</a>
+    <a href="customerservice.html">CUSTOMER SERVICE</a>
+
+    <div class="log-mobile">
+      <button class="log1" onclick="log1()">LOGIN</button>
+      <button class="log2" onclick="log2()">SIGN UP →</button>
+    </div>
+  </nav>
+
+  <!-- Desktop login buttons -->
+  <div class="log">
+    <button class="log1" onclick="log1()">LOGIN</button>
+    <button class="log2" onclick="log2()">SIGN UP →</button>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  const navMenu = document.getElementById("navMenu");
+  const menuIcon = document.getElementById("menuIcon");
+
+  navMenu.classList.toggle("active");
+  menuIcon.classList.toggle("open");
+
+  // Smooth slide animation
+  if (navMenu.classList.contains("active")) {
+    navMenu.style.maxHeight = navMenu.scrollHeight + "px";
+  } else {
+    navMenu.style.maxHeight = "0";
+  }
+}
+</script>
+<!-- 
+    <section class="four">
+            <header class="try">
+                <h1>Try  Investing  Today</h1>
+                <button class="log3">Open Account</button>
+            </header>
+        <div class="facard">
+          <div class="icard">
+                <div class="uk-margin-right">
+                  <span class="in-icon-wrap circle">1</span>
+                </div>
+              <div>
+                <h3>Your hardware is already running</h3>
+                <p>Don’t wrestle with rig assembly and hot, noisy miners at home.
+                We have the fastest bitcoin mining hardware running for you already!</p>
+              </div>
+          </div>
+
+          <div class="icard">
+              <div class="uk-margin-right">
+                  <span class="in-icon-wrap circle">2</span>
+              </div>
+            <div>
+                <h3>Mine alternative cryptocurrencies</h3>
+                <p>You can mine any cryptocurrency available in our catalogue!
+                Switch your mining power on the fly for all the coins using our bitcoin mining website.</p>
+            </div>
+          </div>
+
+        <div class="icard">
+            <div class="uk-margin-right">
+                <span class="in-icon-wrap circle">3</span>
+            </div>
+            <div>
+             <h3>Get your first mining output today</h3>
+             <p>You will get periodic mining outputs to your designated wallet.
+             Try our Bitcoin mining platform now!</p>
+            </div>
+        </div> 
+</section>-->
+
+  <h2 class="pricehead">Choose a your plan</h2>
+
+  <div class="plans">
+    <div class="card7 starter">
+      <div class="ribbon starter">Starter</div>
+      <h3>CURRENT</h3>
+      <div class="subtitle">Small<br>Starter</div>
+      <div class="price">$9,999.99</div>
+      <div class="speed">12.50 MH/s</div>
+      <div class="details">
+        Starting 12 hrs  *<br>
+        View Algorithm<br>
+        Zero Maintenance Fee
+      </div>
+      <script src="logfunctions.js"></script>
+      <button class="prcbtn" onclick="log1()">Get started</button>
+    </div>
+
+    <div class="card7 best">
+      <div class="ribbon best">Best Value</div>
+      <h3>BUSSINESS</h3>
+      <div class="subtitle">Medium<br>Best Buy</div>
+      <div class="price">$99,999.99</div>
+      <div class="speed">25 MH/s</div>
+      <div class="details">
+        Starting 24 hrs *<br>
+        View Algorithm<br>
+        Zero Maintenance Fee
+      </div>
+      <button class="prcbtn" onclick="log1()">Get started</button>
+    </div>
+
+    <div class="card7 pro">
+      <div class="ribbon pro">Professional</div>
+      <h3>INVESTMENT</h3>
+      <div class="subtitle">Large<br>Professional</div>
+      <div class="price">$999,999.99</div>
+      <div class="speed">125 MH/s</div>
+      <div class="details">
+        Starting 24 hrs *<br>
+        View Algorithm<br>
+        Zero Maintenance Fee
+      </div>
+      <button class="prcbtn" onclick="log1()">Get started</button>
+    </div>
+
+    <div class="card7 deal">
+      <div class="ribbon deal">Special Deal</div>
+      <h3>SAVING</h3>
+      <div class="subtitle">Promotion<br>Special Deal</div>
+      <div class="price">$999</div>
+      <div class="speed">5.12 MH/s</div>
+      <div class="details">
+        Starting  NOW *<br>
+        View Algorithm<br>
+        Zero Maintenance Fee
+      </div>
+      <button class="prcbtn" onclick="log1()">Get started</button>
+    </div>
+  </div>
+
+        <!-- Left side -->
+   <div class="in-equity-14">
+          <div class="left-content">
+    <div class="award">
+      <div class="in-award-logo">
+        <img src="in-equity-5-award-3.svg" alt="award" width="110">
+      </div>
+      <div class="in-award-badge">
+        <h3>#1 Choice for Seamless Transactions</h3>
+        <h4>BEST NEXT-GENERATION FINTECH PAYMENTS</h4>
+        <p>Voted by industry professionals</p>
+      </div>  
+    </div> 
+  </div>  
+
+  <!-- Right side -->
+  <div class="right-content">
+    <ul class="uk-list in-list-check">
+      <li>Zero Commissions</li>
+      <li>Zero Deposit Fees</li>
+    </ul>
+    <button class="log4" onclick="log4()">Open Account Now →</button>
+  </div>
+   </div>
+
+<footer class="footer">
+  <div class="footer-top">
+    <!-- Trustpilot Section -->  
+      
+    <div class="footer-box trustpilot">
+      <!-- Trustpilot Logo -->
+      <img src="https://cdn.trustpilot.net/brand-assets/4.1.0/logo-white.svg" 
+      alt="Trustpilot" class="trust-logo">
+
+      <!-- Stars -->
+      <div class="trust-rating">
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+        <svg viewBox="0 0 24 24" class="star half"><polygon points="12,2 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9"/></svg>
+      </div>
+
+      <!-- Score -->
+      <p class="trust-score">TrustScore 4.5 | 120 reviews</p>
+    </div>
+
+
+    <!-- Main Links -->
+    <div class="footer-box">
+      <h4>Main Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="whysevercom.html">Why Servercom</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customerservice.html">Support</a></li>
+      </ul>
+    </div>
+
+    <!-- Helpful Links -->
+    <div class="footer-box">
+      <h4>Helpful Links</h4>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="customerservice.html">Contact Us</a></li>
+        <li><a href="pricing.html">Payment Access</a></li>
+      </ul>
+    </div>
+
+    <!-- Office Info -->
+    <div class="footer-box office">
+      <h4><span class="icon">📍</span> Office</h4>
+         <p>Servercom Ltd. Europe</p>
+         <p>Servercom Ltd. Asia-Pacific</p>
+        <p>Servercom Ltd.  Lagos, Nigeria
+       support@servercom.io </p>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 Servercom. All Rights Reserved.</p>
+    <div class="crypto-icons">
+      <img src="Bitcoin.svg" alt="Bitcoin">
+      <img src="Ethereum.svg" alt="Ethereum">
+      <img src="usdttt.svg" alt="Tether">
+    </div>
+    <button id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+    <script src="scroll-top.js"></script>
+  </div>
+</footer>
+</body>
+</html>
